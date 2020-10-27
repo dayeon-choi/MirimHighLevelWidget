@@ -5,5 +5,62 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:format="예약에 걸린시간: %s"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예약 시작"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/radio_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 설정"/>
+        <RadioButton
+            android:id="@+id/radio_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 설정"/>
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <CalendarView
+            android:id="@+id/calendar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TimePicker
+            android:id="@+id/time_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약종료"/>
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
 </LinearLayout>

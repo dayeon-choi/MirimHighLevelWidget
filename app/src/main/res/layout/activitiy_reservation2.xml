@@ -37,8 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-        <CalendarView
-            android:id="@+id/calendar1"
+        <DatePicker
+            android:id="@+id/date_pick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TimePicker

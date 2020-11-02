@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             chrono.setBase(SystemClock.elapsedRealtime());
             chrono.start();
             chrono.setTextColor(Color.RED);
+            radioDate.setVisibility(View.VISIBLE);
+            radioTime.setVisibility(View.VISIBLE);
             }
         };
 
@@ -66,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             chrono.stop();
             chrono.setTextColor(Color.BLUE);
             textResult.setText(datePicker.getYear()+"년 "+(datePicker.getMonth()+1)+"월 "+timePicker.getCurrentHour()+"시 "+timePicker.getCurrentMinute()+"분");
+            radioDate.setVisibility(View.INVISIBLE);
+            radioTime.setVisibility(View.INVISIBLE);
+            datePicker.setVisibility(View.INVISIBLE);
+            timePicker.setVisibility(View.INVISIBLE);
             return false;//기본행동 취소
         }
     };

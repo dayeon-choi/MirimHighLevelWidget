@@ -39,6 +39,7 @@
         >
         <DatePicker
             android:id="@+id/date_pick"
+            android:datePickerMode="spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TimePicker
@@ -67,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:text="0000년 00월 00일 00시 00분"
             />
     </LinearLayout>
 </LinearLayout>
